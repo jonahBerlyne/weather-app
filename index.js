@@ -1,4 +1,3 @@
-import 'dotenv/config';
 const locale = document.querySelector("#locale");
 const weather = document
 .querySelector("#weather");
