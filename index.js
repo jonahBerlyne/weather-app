@@ -1,3 +1,4 @@
+import 'dotenv/config';
 const locale = document.querySelector("#locale");
 const weather = document
 .querySelector("#weather");
@@ -26,7 +27,7 @@ function capitalizeFirstLetters(str) {
 }
 
 function generateWeather() {
- fetch(`http://api.openweathermap.org/data/2.5/weather?q=${searchValue}&appid=6abc7a32401f7fc386341ccc08d3085a`, {mode: "cors"})
+ fetch(`http://api.openweathermap.org/data/2.5/weather?q=${searchValue}&appid=05eff963762d83563805b1dba84dd4ef`, {mode: "cors"})
   .then(function(response) {
    return response.json();
   })
